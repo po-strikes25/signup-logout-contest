@@ -20,7 +20,7 @@ logout.addEventListener('click', () => {
     localStorage.removeItem('user');
     document.getElementById('success-msg').style.display = 'block';
     setTimeout(() => {
-        window.location.href = "../index_pvz.html";
+        window.location.href = "../index.html";
     }, 1000);
 });
 
@@ -30,6 +30,6 @@ signup.addEventListener('click', () => {
     if (JSON.parse(localStorage.getItem('user')) && JSON.parse(localStorage.getItem('user')).accessToken != "") {
         window.location.href = "./public/profile_pvz.html";
     } else {
-        window.location.href = "../index_pvz.html";
+        window.location.href = "../index.html";
     }
 });

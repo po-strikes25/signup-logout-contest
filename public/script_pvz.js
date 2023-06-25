@@ -55,6 +55,6 @@ profile.addEventListener('click', () => {
     if (user) {
         window.location.href = "./public/profile_pvz.html";
     } else {
-        window.location.href = "../index_pvz.html";
+        window.location.href = "../index.html";
     }
 });
